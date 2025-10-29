@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kwitansi Statis - PETSHOP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="image-header">
+        <img src="Frame 2.png" alt="PETSHOP">
+      </div>
+    </div>
+
+    <h2 class="title">Kwitansi</h2>
+
+    <div class="fields">
+            <div class="row">
+        <div class="label">No.</div>
+        <div class="static-line filled">INV/20251027/001</div>
+      </div>
+      
+      <div class="row" style="align-items: flex-start;">
+        <div class="label" style="padding-top: 10px;">Untuk Pembayaran</div>
+        <div class="desc">
+            <table class="item-table">
+                <thead>
+                    <tr>
+                        <th style="width: 15%">Kode</th>
+                        <th style="width: 35%">Nama Barang</th>
+                        <th style="width: 10%; text-align: center;">Jumlah</th>
+                        <th style="width: 20%; text-align: right;">Harga Satuan</th>
+                        <th style="width: 20%; text-align: right;">Total Item</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>MKC-WHK-01</td>
+                        <td>Whiskas (Makanan Kucing)</td>
+                        <td style="text-align: center;">2</td>
+                        <td style="text-align: right;">25.000</td>
+                        <td style="text-align: right;">50.000</td>
+                    </tr>
+                    <tr>
+                        <td>PK-TC-05</td>
+                        <td>Top Cat (Pasir Kucing)</td>
+                        <td style="text-align: center;">1</td>
+                        <td style="text-align: right;">45.000</td>
+                        <td style="text-align: right;">45.000</td>
+                    </tr>
+                    <tr><td colspan="5" class="empty-row"></td></tr>
+                </tbody>
+            </table>
+            <div class="summary-breakdown">
+                <div class="total-row"><span>Subtotal:</span><span>95.000</span></div>
+                <div class="total-row"><span>Diskon:</span><span>5.000</span></div>
+                <div class="total-row final"><span>TOTAL AKHIR:</span><span>90.000</span></div>
+            </div>
+        </div>
+      </div>
+
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-top:6px">
+        <div class="terbilang">
+          <div class="label">Terbilang Rp.</div>
+          <div class="ter-box filled">Sembilan Puluh Ribu Rupiah</div>
+        </div>
+
+        <div class="meta-right">
+          <div class="date-line">Jakarta, 27 / 10 / 2025</div>
+          <div class="receiver-name">
+                <div class="filled-name">BUDI SANTOSO</div>
+                <div style="font-size: 10px; margin-top: 3px; font-style: italic;">(Penerima)</div>
+            </div>
+        </div>
+      </div>
+
+      <div class="transaction-summary">
+        <div class="cashier-info">
+          <label>Kasir:</label>
+          <div class="filled-data short-line">Sari</div>
+          <label style="margin-left: 10px;">ID:</label>
+          <div class="filled-data smallest-line">K-001</div>
+        </div>
+        <div class="payment-info">
+          <label>Metode:</label>
+          <div class="filled-data short-line">Tunai</div>
+        </div>
+        <div class="footer-note">
+          (Catatan) Simpan kwitansi ini sebagai bukti pembayaran.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,240 @@
+:root{
+ --paper-width: 900px; 
+ --dark:#222;
+ --muted:#777;
+ --shadow: 0 2px 4px rgba(0,0,0,0.05);
+ --primary-line: 1px dotted rgba(0,0,0,0.3);
+}
+/* --- Global Reset & Page Setup --- */
+html,body{
+height:100%;
+margin:0;
+font-family: 'Times New Roman', serif;
+background:#f3f3f3;
+color: var(--dark);
+}
+.container{
+width:calc(var(--paper-width));
+max-width:95%;
+margin:5px auto; 
+background:#fff;
+border:1px solid #cfcfcf;
+box-shadow:var(--shadow);
+padding:8px 15px; 
+}
+
+/* --- Header & Company Info --- */
+.header{
+    display:flex;
+    justify-content: center; 
+    align-items:center;
+    padding-top: 3px; 
+    padding-bottom: 3px; 
+    border-bottom: 1px solid #bbb; 
+}
+.image-header {
+    width: 100%;
+    text-align: center;
+    line-height: 0; 
+}
+.image-header img {
+    max-width: 50%; 
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* --- Title --- */
+h2.title{
+    font-family:'Times New Roman',serif;
+    font-size:20px;
+    text-align:center;
+    margin:3px 0 1px; /* MENGURANGI MARGIN ATAS & BAWAH JUDUL */
+    font-weight:700;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 2px;
+}
+
+/* --- Garis Statis Pengganti Input --- */
+.static-line {
+    flex: 1;
+    border-bottom: var(--primary-line);
+    height: 18px;
+    margin-top: 8px; 
+}
+.static-line.filled {
+    border-bottom: none;
+    font-weight: bold;
+    color: var(--dark);
+    font-size: 14px;
+    height: auto;
+    padding: 2px 0; 
+}
+.filled-data {
+    border-bottom: 1px solid #ccc; 
+    padding: 1px 5px; 
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+}
+.filled-data.short-line { width: 100px; }
+.filled-data.smallest-line { width: 50px; }
+
+
+/* --- Main Fields --- */
+.fields{margin-top:2px;font-family:'Times New Roman',serif} /* MENGURANGI MARGIN ATAS BLOK FIELD */
+.row{display:flex;align-items:center;margin:2px 0}
+.label{width:120px;font-weight:700;padding-right: 8px; font-size: 13px;}
+
+.desc{
+    flex: 1;
+    min-height: 90px;
+    padding: 3px;
+    font-size: 12px; 
+    line-height: 1.2; 
+    border: none;
+}
+
+/* --- Item Table Styling --- */
+.item-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+    margin-bottom: 0px; 
+}
+.item-table th {
+    border-bottom: 1px solid #333;
+    text-align: left;
+    padding: 2px 0; 
+    font-weight: 700;
+}
+.item-table td {
+    padding: 2px 0; 
+    border-bottom: 1px dotted #ccc;
+}
+.item-table .empty-row td {
+    border-bottom: none;
+    height: 5px; 
+}
+
+/* --- Summary Breakdown --- */
+.summary-breakdown {
+    float: right;
+    width: 250px;
+    font-size: 12px;
+    margin-top: 3px; 
+}
+.total-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 1px 0; 
+}
+.total-row span:first-child {
+    font-weight: 500;
+}
+.total-row.final {
+    margin-top: 3px;
+    padding-top: 3px;
+    border-top: 1px solid #333;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+/* --- Terbilang & Meta Right (Date/Penerima) --- */
+.terbilang{display:flex;align-items:center;gap:8px;margin-top:4px;padding: 3px 0;border-top: 1px solid #ccc;}
+.terbilang .label{font-style:italic;font-weight:700;width: 120px; font-size: 12px;}
+.terbilang .ter-box{
+    flex:1;
+    height:22px; 
+    padding:2px 6px; 
+    font-size: 14px;
+    background:#fffbe6;
+    border:1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+.terbilang .ter-box.filled {
+    border: none;
+    font-size: 14px;
+    font-style: normal;
+    background: transparent;
+    font-weight: bold;
+    color: var(--dark);
+}
+
+.meta-right{
+    display:flex;
+    flex-direction:column;
+    align-items:center; 
+    gap:1px; 
+    margin-left: 10px;
+}
+.date-line{font-size:12px;margin-bottom: 1px; white-space: nowrap;}
+.date-line span {
+    border-bottom: 1px dotted #555;
+    padding: 0 5px;
+}
+
+.receiver-name {
+    height: 35px; 
+    width: 150px;
+    font-size: 10px;
+    text-align: center; 
+    margin-top: 4px; 
+    border-bottom: none; 
+}
+.filled-name { 
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 10px; 
+    white-space: nowrap;
+}
+
+
+/* --- Transaksi Summary Statis --- */
+.transaction-summary {
+    margin-top: 8px; 
+    padding-top: 4px; 
+    border-top: 1px dashed #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+}
+
+.cashier-info, .payment-info {
+    display: flex;
+    align-items: center;
+    gap: 4px; 
+}
+
+.transaction-summary label {
+    font-weight: bold;
+    color: var(--muted);
+    text-transform: uppercase;
+}
+
+.footer-note {
+    font-style: italic;
+    color: var(--muted);
+}
+
+
+/* --- Print Media Query --- */
+@media print{
+    .container{box-shadow: none; border: 1px solid #000; margin: 0 auto; width: 100%; max-width: 100%; padding: 8px 10px;}
+    .amount-bar{border: 1px solid #000;}
+    .transaction-summary { border-top: 1px dotted #000; }
+    .item-table td { border-bottom: 1px dotted #000; }
+    .summary-breakdown { float: none; width: 100%; margin-top: 10px; }
+    .total-row { float: right; width: 250px; }
+    .filled-data { border-bottom: 1px solid #000; }
+    .filled-name { text-decoration: underline; }
+    
+    .image-header img { max-width: 50%; } 
+}
